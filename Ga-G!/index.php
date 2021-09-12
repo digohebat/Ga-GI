@@ -28,7 +28,7 @@
             <li>
                 <a href="#">Daftar</a>
             </li>
-            <li>
+            <li class = "hoverlist">
                 <a href="#">Masuk</a>
             </li>
             </ul>

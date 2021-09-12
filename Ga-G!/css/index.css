@@ -67,7 +67,7 @@ body {
     font-size: 2.4rem;
 }
 
-.nav div.main_list ul li a:hover {
+.nav div.main_list ul .hoverlist a:hover {
     color: #00E676;
 }
 
