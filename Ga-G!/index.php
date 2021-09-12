@@ -48,7 +48,7 @@
   <h1 class="judul">Jadilah bagian dari kami!</h1>
   <div class="subkonten">
     <img src="assets/pic/undraw_connection_b38q.svg" class="gambar">
-    <div class="tulisan">Di Ga-G!, kamu bisa bergabung dengan ratusan ribu pengguna lainnya dan menciptakan komunitasmu sendiri.</div>
+    <div class="tulisan">Di Ga-G! , kamu bisa bergabung dengan ratusan ribu pengguna lainnya dan menciptakan komunitasmu sendiri.</div>
     <button class="mulai">MULAI</button>
   </div>
 </div>
@@ -59,10 +59,12 @@
         <div>
             <h4 class="text">Tulis ulasan pribadimu!</h4>
             <img src="assets/pic/icon.png" class="Gkonten2">
+            <p class="textBottom1">Tambahkan ulasan tentang produk yang kamu gunakan</p>
         </div>
         <div>
             <h4 class="text2">Chat bersama komunitas!</h4>
             <img src="assets/pic/icon2.png" class="Gkonten">
+            <p class="textBottom2">Diskusilah bersama komunitas kami</p>
         </div>
         <div>
             <h4 class="text3">Cari produk impian! </h4>

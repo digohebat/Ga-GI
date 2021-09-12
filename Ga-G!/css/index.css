@@ -454,14 +454,14 @@ body {
     background: #7B1113;
     border-radius: 0px;
 }
-
+/* konten pertama dari div subkonten2*/
 .text{
     position: absolute;
     display: flex;
     
     left: 10%;
     right: 79.06%;
-    top: 21.5%;
+    top: 19.5%;
     bottom: 29.26%;
 
     font-family: Lexend;
@@ -474,6 +474,36 @@ body {
     color: #FFC300;
 }
 
+.Gkonten2{
+    position: absolute;
+    width: 200px;
+    left: 9.01%;
+    right: 79.74%;
+    top: 37.76%;
+    bottom: 18.43%;
+    
+}
+
+.textBottom1{
+    position: absolute;
+    display: flex;
+    
+    left: 10.5%;
+    right: 79.06%;
+    top: 70.5%;
+    bottom: 29.26%;
+
+    font-family: Lexend;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 30px;
+    text-align: center;
+
+    color: #FFFFFF;
+}
+
+/* konten kedua dari div subkonten2*/
 .text2{
     position: absolute;
 left: 44.9%;
@@ -491,6 +521,37 @@ text-align: center;
 color: #FFC300;
 }
 
+.Gkonten{
+    position: absolute;
+    width: 200px;
+    left: 44.01%;
+    right: 79.74%;
+    top: 33.76%;
+    bottom: 18.43%;
+}
+
+
+.textBottom2 {
+    position: absolute;
+    display: flex;
+
+    
+    left: 48.25%;
+    right: 79.06%;
+    top: 70.5%;
+    bottom: 29.26%;
+
+    font-family: Lexend;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 30px;
+    text-align: center;
+
+    color: #FFFFFF;
+}
+
+/* konten ketiga dari div subkonten2*/
 .text3{
     position: absolute;
 left: 80.06%;
@@ -506,25 +567,6 @@ line-height: 30px;
 text-align: center;
 
 color: #FFC300;
-}
-
-.Gkonten2{
-    position: absolute;
-    width: 200px;
-    left: 9.01%;
-    right: 79.74%;
-    top: 39.76%;
-    bottom: 18.43%;
-    
-}
-
-.Gkonten{
-    position: absolute;
-    width: 200px;
-    left: 44.01%;
-    right: 79.74%;
-    top: 33.76%;
-    bottom: 18.43%;
 }
 
 .Gkonten3{
