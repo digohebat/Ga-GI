@@ -14,6 +14,7 @@ body {
 /* Navbar section */
 
 .nav {
+    z-index: 2;
     width: 100%;
     height: 65px;
     position: fixed;
@@ -79,7 +80,7 @@ body {
     background-position: center top;
 	background-size:cover;
     height: 100vh;
-    background-color: red;
+    background-image: url(https://cdn-2.tstatic.net/tribunnews/foto/bank/images/tes-kepribadian-gambar-pertama-11.jpg);
   animation-name: example;
   animation-duration: 5s;
   animation-timing-function: linear;
@@ -102,8 +103,8 @@ body {
 
 /* Media qurey section */
 @keyframes example {
-    from {background-color: red;}
-    to {background-color: yellow;}
+    from {background-image: url(https://cdns.klimg.com/dream.co.id/resized/640x320/news/2017/11/13/70360/3-tips-bekerja-dengan-orang-lain-dengan-mudah-171113e.jpg);}
+    to {background-image: url(https://gkdi.org/blog/wp-content/uploads/2020/05/Bekerja-Cover-FS-min.jpg);}
   }
 
 @media screen and (min-width: 768px) and (max-width: 1024px) {
@@ -361,13 +362,14 @@ body {
 
 
 .konten{
-    
-    z-index: -1;
-    height: 1000px;
+    position: relative;
+    z-index: 1;
+    height: 700px;
     width: 100%;
     background-color: #F5F5F5;
 }
- .judul{
+.konten .judul{
+    position: relative;
     margin-left: 140px;
     padding-top: 40px;
     font-family: Lexend;
@@ -381,7 +383,7 @@ body {
 }
 .konten .subkonten{
     z-index: -1;
-   
+    position: absolute;
     width: 1250px;
     height: 508px;
     margin-left: 140px;
@@ -389,4 +391,179 @@ body {
 
     background: #006660;
     border-radius: 5px;
+}
+
+.konten .subkonten .gambar{
+    position: relative;
+    width: 517px;
+    height: 400px;
+    margin-left: 86px;
+    margin-top: 70px;
+}
+
+ 
+ .konten .subkonten  .tulisan{
+    position: absolute;
+    width: 595px;
+    height: 90px;
+    left: 600px;
+    bottom: 280px;
+
+    font-family: Lexend;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 30px;
+    text-align: right;
+
+    color: #FFFFFF;
+}
+.subkonten .mulai{
+    position: relative;
+    border: none;
+    border-radius: 10px;
+    width: 162px;
+    height: 53px;
+    left: 337px;
+    top: 154px;
+    font-size: 20px;
+    color: #111;
+    background-color: #FFC300 ;
+}
+
+.judul2{
+    position: relative;
+    margin-left: 140px;
+    padding-top: 20px;
+    font-family: Lexend;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 34px;
+    line-height: 60px;
+    color: #000000;
+}
+
+.konten .subkonten2{
+    z-index: -1;
+    position: absolute;
+    width: 100%;
+    height: 508px;
+    margin-top: 30px;
+
+    background: #7B1113;
+    border-radius: 5px;
+}
+
+.text{
+    position: absolute;
+    display: flex;
+    
+    left: 8.33%;
+    right: 79.06%;
+    top: 15.19%;
+    bottom: 29.26%;
+
+    font-family: Lexend;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 30px;
+    text-align: center;
+
+    color: #FFC300;
+}
+
+.text2{
+    position: absolute;
+left: 43.7%;
+right: 43.7%;
+top: 15.19%;
+    bottom: 29.26%;
+
+font-family: Lexend;
+font-style: normal;
+font-weight: 500;
+font-size: 19px;
+line-height: 30px;
+text-align: center;
+
+color: #FFC300;
+}
+
+.text3{
+    position: absolute;
+left: 79.06%;
+right: 8.33%;
+top: 15.19%;
+    bottom: 29.26%;
+
+font-family: Lexend;
+font-style: normal;
+font-weight: 500;
+font-size: 20px;
+line-height: 30px;
+text-align: center;
+
+color: #FFC300;
+}
+
+.Gkonten2{
+    position: absolute;
+    width: 200px;
+    left: 9.01%;
+    right: 79.74%;
+    top: 36.76%;
+    bottom: 18.43%;
+    
+}
+
+.Gkonten{
+    position: absolute;
+    width: 200px;
+    left: 44.01%;
+    right: 79.74%;
+    top: 30.76%;
+    bottom: 18.43%;
+}
+
+.Gkonten3{
+    position: absolute;
+    width: 200px;
+    left: 79.01%;
+    right: 79.74%;
+    top: 30.76%;
+    bottom: 50.43%;
+
+}
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+    .Gkonten2{
+        position: absolute;
+        width: 100px;
+        left: 9.01%;
+        right: 79.74%;
+        top: 36.76%;
+        bottom: 18.43%;
+        
+    }
+    
+    .Gkonten{
+        position: absolute;
+        width: 100px;
+        left: 44.01%;
+        right: 79.74%;
+        top: 30.76%;
+        bottom: 18.43%;
+    }
+    
+    .Gkonten3{
+        position: absolute;
+        width: 100px;
+        left: 79.01%;
+        right: 79.74%;
+        top: 30.76%;
+        bottom: 18.43%;
+    
+    }
+
 }
