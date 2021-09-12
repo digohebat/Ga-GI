@@ -26,7 +26,7 @@ body {
     float: left;
     width: auto;
     height: auto;
-    padding-left: 3rem;
+    padding-left: 4rem;
 }
 
 .nav div.logo a {
@@ -80,7 +80,7 @@ body {
     background-position: center top;
 	background-size:cover;
     height: 100vh;
-    background-image: url(https://cdn-2.tstatic.net/tribunnews/foto/bank/images/tes-kepribadian-gambar-pertama-11.jpg);
+    /* background-image: url(../assets/screenshot1.jpg); */
   animation-name: example;
   animation-duration: 5s;
   animation-timing-function: linear;
@@ -103,8 +103,8 @@ body {
 
 /* Media qurey section */
 @keyframes example {
-    from {background-image: url(https://cdns.klimg.com/dream.co.id/resized/640x320/news/2017/11/13/70360/3-tips-bekerja-dengan-orang-lain-dengan-mudah-171113e.jpg);}
-    to {background-image: url(https://gkdi.org/blog/wp-content/uploads/2020/05/Bekerja-Cover-FS-min.jpg);}
+    from {background-image: url(../assets/screenshot1.jpg);}
+    to {background-image: url(../assets/screenshot2.png);}
   }
 
 @media screen and (min-width: 768px) and (max-width: 1024px) {
@@ -451,16 +451,16 @@ body {
     margin-top: 30px;
 
     background: #7B1113;
-    border-radius: 5px;
+    border-radius: 0px;
 }
 
 .text{
     position: absolute;
     display: flex;
     
-    left: 8.33%;
+    left: 10%;
     right: 79.06%;
-    top: 15.19%;
+    top: 21.5%;
     bottom: 29.26%;
 
     font-family: Lexend;
@@ -475,15 +475,15 @@ body {
 
 .text2{
     position: absolute;
-left: 43.7%;
+left: 44.9%;
 right: 43.7%;
-top: 15.19%;
+top: 21.5%;
     bottom: 29.26%;
 
 font-family: Lexend;
 font-style: normal;
 font-weight: 500;
-font-size: 19px;
+font-size: 24px;
 line-height: 30px;
 text-align: center;
 
@@ -492,15 +492,15 @@ color: #FFC300;
 
 .text3{
     position: absolute;
-left: 79.06%;
+left: 80.06%;
 right: 8.33%;
-top: 15.19%;
+top: 21.5%;
     bottom: 29.26%;
 
 font-family: Lexend;
 font-style: normal;
 font-weight: 500;
-font-size: 20px;
+font-size: 24px;
 line-height: 30px;
 text-align: center;
 
@@ -512,7 +512,7 @@ color: #FFC300;
     width: 200px;
     left: 9.01%;
     right: 79.74%;
-    top: 36.76%;
+    top: 39.76%;
     bottom: 18.43%;
     
 }
@@ -522,16 +522,17 @@ color: #FFC300;
     width: 200px;
     left: 44.01%;
     right: 79.74%;
-    top: 30.76%;
+    top: 33.76%;
     bottom: 18.43%;
 }
 
 .Gkonten3{
     position: absolute;
+    height: 156px;
     width: 200px;
     left: 79.01%;
     right: 79.74%;
-    top: 30.76%;
+    top: 37.76%;
     bottom: 50.43%;
 
 }
