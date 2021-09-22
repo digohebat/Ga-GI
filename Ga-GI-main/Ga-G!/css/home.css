@@ -1,0 +1,843 @@
+@import url('https://fonts.googleapis.com/css?family=Quicksand:400,500,700');
+html,
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Quicksand", sans-serif;
+    font-size: 62.5%;
+    font-size: 10px;
+}
+/*-- Inspiration taken from abdo steif -->
+/* --> https://codepen.io/abdosteif/pen/bRoyMb?editors=1100*/
+
+/* Navbar section */
+/* class navbar utama */
+/* jangan cari transparansi bagroun soale gak di kei cobak kei bagroun pasti muncul */
+.nav {
+    z-index: 2;
+    width: 100vw;
+    height: 65px;
+    position: fixed;
+    line-height: 65px;
+    text-align: center;
+    
+    padding-top: 20px;
+    padding-bottom: 20px;
+    -webkit-transition: all 0.4s ease;
+    transition: all 0.4s ease;
+
+
+}
+/* buka navbar dan mengedit div yang berkelas logo */
+.nav div.logo {
+    float: left;
+    margin-top: 10px;
+    margin-left: 200px;
+    width: auto;
+    height: auto;
+    padding-left: 3rem;
+}
+
+/* coding ini mengatur posisi konten yang berada pada class main_list */
+.nav div.main_list {
+    height: 65px;
+    float: right;
+    margin-right: 10vw;
+}
+
+.nav div.main_list ul {
+    width: 100%;
+    height: 65px;
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.nav div.main_list ul li {
+    width: 100px;
+    height: 65px;
+    padding: 0;
+    padding-right: 3rem;
+}
+
+.nav div.main_list ul li a {
+    text-decoration: none;
+    color: white;
+    line-height: 65px;
+    font-size: 2.4rem;
+}
+
+.nav div.main_list ul li .active {
+    text-decoration: none;
+    color: #FFC300;
+    line-height: 65px;
+    font-size: 2.4rem;
+}
+
+
+.nav div.main_list ul .hoverlist a:hover {
+    color: #fff;
+    border: 3px solid #FFC300;
+}
+
+.nav div.main_list ul .hoverlistindex a:hover {
+    color: #fff;
+    border: 3px solid #FFC300;
+}
+/* batas dari navbar utama sebelum di scrole */
+
+/* Home section */
+
+.konten {
+    width: 100vw;
+    height: 800px;
+    background-position: center top;
+	background-size:cover;
+  animation-name: example;
+  animation-duration: 5s;
+  animation-timing-function: linear;
+  animation-delay: 2s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+
+.navTrigger {
+    display: none;
+}
+
+
+
+
+/* Media qurey section */
+@keyframes example {
+    from {background-image: url(../assets/screenshot1.jpg);}
+    to {background-image: url(../assets/screenshot2.png);}
+  }
+
+
+.navTrigger {
+    cursor: pointer;
+    width: 30px;
+    height: 25px;
+    margin: auto;
+    position: absolute;
+    right: 30px;
+    top: 0;
+    bottom: 0;
+}
+
+
+.navTrigger i {
+    background-color: #FFC300;
+    border-radius: 2px;
+    content: '';
+    display: block;
+    width: 100%;
+    height: 4px;
+}
+
+.navTrigger i:nth-child(1) {
+    -webkit-animation: outT 0.8s backwards;
+    animation: outT 0.8s backwards;
+    -webkit-animation-direction: reverse;
+    animation-direction: reverse;
+}
+
+.navTrigger i:nth-child(2) {
+    margin: 5px 0;
+    -webkit-animation: outM 0.8s backwards;
+    animation: outM 0.8s backwards;
+    -webkit-animation-direction: reverse;
+    animation-direction: reverse;
+}
+
+.navTrigger i:nth-child(3) {
+    -webkit-animation: outBtm 0.8s backwards;
+    animation: outBtm 0.8s backwards;
+    -webkit-animation-direction: reverse;
+    animation-direction: reverse;
+}
+
+.navTrigger.active i:nth-child(1) {
+    -webkit-animation: inT 0.8s forwards;
+    animation: inT 0.8s forwards;
+}
+
+.navTrigger.active i:nth-child(2) {
+    -webkit-animation: inM 0.8s forwards;
+    animation: inM 0.8s forwards;
+}
+
+.navTrigger.active i:nth-child(3) {
+    -webkit-animation: inBtm 0.8s forwards;
+    animation: inBtm 0.8s forwards;
+}
+
+@-webkit-keyframes inM {
+    50% {
+        -webkit-transform: rotate(0deg);
+    }
+    100% {
+        -webkit-transform: rotate(45deg);
+    }
+}
+
+@keyframes inM {
+    50% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(45deg);
+    }
+}
+
+@-webkit-keyframes outM {
+    50% {
+        -webkit-transform: rotate(0deg);
+    }
+    100% {
+        -webkit-transform: rotate(45deg);
+    }
+}
+
+@keyframes outM {
+    50% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(45deg);
+    }
+}
+
+@-webkit-keyframes inT {
+    0% {
+        -webkit-transform: translateY(0px) rotate(0deg);
+    }
+    50% {
+        -webkit-transform: translateY(9px) rotate(0deg);
+    }
+    100% {
+        -webkit-transform: translateY(9px) rotate(135deg);
+    }
+}
+
+@keyframes inT {
+    0% {
+        transform: translateY(0px) rotate(0deg);
+    }
+    50% {
+        transform: translateY(9px) rotate(0deg);
+    }
+    100% {
+        transform: translateY(9px) rotate(135deg);
+    }
+}
+
+@-webkit-keyframes outT {
+    0% {
+        -webkit-transform: translateY(0px) rotate(0deg);
+    }
+    50% {
+        -webkit-transform: translateY(9px) rotate(0deg);
+    }
+    100% {
+        -webkit-transform: translateY(9px) rotate(135deg);
+    }
+}
+
+@keyframes outT {
+    0% {
+        transform: translateY(0px) rotate(0deg);
+    }
+    50% {
+        transform: translateY(9px) rotate(0deg);
+    }
+    100% {
+        transform: translateY(9px) rotate(135deg);
+    }
+}
+
+@-webkit-keyframes inBtm {
+    0% {
+        -webkit-transform: translateY(0px) rotate(0deg);
+    }
+    50% {
+        -webkit-transform: translateY(-9px) rotate(0deg);
+    }
+    100% {
+        -webkit-transform: translateY(-9px) rotate(135deg);
+    }
+}
+
+@keyframes inBtm {
+    0% {
+        transform: translateY(0px) rotate(0deg);
+    }
+    50% {
+        transform: translateY(-9px) rotate(0deg);
+    }
+    100% {
+        transform: translateY(-9px) rotate(135deg);
+    }
+}
+
+@-webkit-keyframes outBtm {
+    0% {
+        -webkit-transform: translateY(0px) rotate(0deg);
+    }
+    50% {
+        -webkit-transform: translateY(-9px) rotate(0deg);
+    }
+    100% {
+        -webkit-transform: translateY(-9px) rotate(135deg);
+    }
+}
+
+@keyframes outBtm {
+    0% {
+        transform: translateY(0px) rotate(0deg);
+    }
+    50% {
+        transform: translateY(-9px) rotate(0deg);
+    }
+    100% {
+        transform: translateY(-9px) rotate(135deg);
+    }
+}
+
+.affix {
+    padding: 0;
+    background-color: #fff;
+}
+
+.affix div.main_list ul li a  {
+    text-decoration: none;
+    color: black;
+    line-height: 65px;
+    font-size: 2.4rem;
+}
+
+.affix div.main_list ul .hoverlist a:hover {
+    color: black;
+    border: 3px solid #FFC300;
+}
+
+.affix div.main_list ul .hoverlistindex a:hover {
+    color: #FFC300;
+    border: 3px solid rgb(0, 102, 96);
+}
+
+
+/* memasuki konten yang berwarna hijau dan konten yang membungkus atau warna */
+.konten2{
+    position: relative;
+    z-index: -1;
+    height: 100vh;
+    bottom: 30px;
+    width: 100vw;
+    background-color: #F5F5F5;
+}
+
+ .judul{
+    position: relative;
+    top: 60px;
+    margin-left: 150px;
+    font-family: Lexend;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 48px;
+    line-height: 30px;
+}
+
+.konten2 .subkonten{
+    margin: auto;
+    position: relative;
+    top: 80px;
+    height: 721px;
+    width: 85vw;
+    background-color: rgb(0, 102, 96);
+}
+
+.konten2 .subkonten .gambarK{
+    position: absolute;
+    width: 517px;
+    height: 400px;
+    left: 150px;
+    top: 200px;    
+}
+
+
+.konten2 .subkonten .textK {
+    position: absolute;
+    width: 595px;
+    height: 90px;
+    right: 100px;
+    top: 200px;
+
+    font-family: Lexend;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 29px;
+    line-height: 30px;
+    text-align: right;
+    color: #FFFFFF;
+}
+
+.konten2 .subkonten .mulai{
+    position: absolute;
+    width: 242px;
+    height: 63px;
+    right: 100px;
+    top: 500px;
+    font-size: 25px;
+    cursor: pointer;
+    border-radius: 10px;
+    border: none;
+    background-color: #FFC300;
+}
+
+/* memasuki konten ke 3 */
+ .judul2{
+    position: relative;
+    
+    margin-left: 150px;
+   
+    font-family: Lexend;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 48px;
+    line-height: 30px;
+}
+
+.konten3{
+    position: relative;
+    z-index: -1;
+    height: 70vh;
+    width: 100vw;
+    bottom: 70px;
+    background-color:  #F5F5F5;;
+}
+
+.konten3 .subkonten2{
+    margin: auto;
+    position: relative;
+    width: 100%;
+    height: 520px;
+    top: 30px;
+    background: rgb(123, 17, 19);
+}
+
+.flex-container {
+  display: flex;
+  flex-wrap: nowrap;
+ 
+}
+
+.flex-container > div {
+  width: 29vw;
+  margin: 7vw;
+  margin-left: 9vw;
+  margin-top: 7vh;
+  text-align: center;
+  line-height: 19px;
+  font-size: 1vw;
+  color: #FFC300;
+}
+
+.flex-container > div > p {
+ color: #fff;
+ font-size: 28px;
+ line-height: 25px;
+}
+
+/* MEMASUKI KONTEN KE 4 */
+.konten4{
+    position: relative;
+    z-index: -1;
+    height: 90vh;
+    width: 100vw;
+    bottom: 70px;
+    background-color:  #F5F5F5;
+}
+
+ .judul3{
+    position: absolute;
+    width: 456px;
+    height: 180px;
+    left: 782px;
+    top: 148px;
+
+    font-family: Lexend;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 94px;
+    line-height: 180px;
+
+    background: -webkit-linear-gradient(to right, #003566, #FF006F);
+	background: linear-gradient(to right, #003566, #FF006F);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+}
+
+ .subjudul{
+    position: absolute;
+    width: 456px;
+    height: 180px;
+    left: 882px;
+    top: 248px;
+
+    font-family: Lexend;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 180px;
+
+    background: -webkit-linear-gradient(to right, #003566, #FF006F);
+	background: linear-gradient(to right, #003566, #ff0000);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+   
+}
+
+.flex-container2 {
+  display: flex;
+  flex-wrap: nowrap;
+  
+}
+
+.flex-container2 > div  {
+  background-color: #f1f1f1;
+  margin-top: 450px;
+  margin-left: 50px;
+}
+
+.flex-container2 > div >img  {
+  width: 150px;
+    height: 100px;
+}
+
+
+
+
+/* ojok ngoding nak ngisor iki khusus rensponsive */
+
+
+/* untuk ukuran laptop biasa */
+@media only screen and (max-width:1366px) {
+
+ .judul{
+    position: relative;
+    top: 60px;
+    margin-left: 8vw;
+    font-family: Lexend;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 36px;
+    line-height: 30px;
+}
+
+
+.konten2 .subkonten .gambarK{
+    position: absolute;
+    width: 40vw;
+    height: 350px;
+    left: 90px;
+    top: 160px;    
+}
+
+
+.konten2 .subkonten .textK {
+    position: absolute;
+    width: 30vw;
+    height: 90px;
+    right: 60px;
+    top: 210px;
+
+    font-family: Lexend;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 30px;
+    text-align: right;
+    color: #FFFFFF;
+}
+
+.konten2 .subkonten .mulai{
+    position: absolute;
+    width: 10vw;
+    height: 5vw;
+    left: 60vw;
+    top: 500px;
+    font-size: 25px;
+    cursor: pointer;
+    border-radius: 10px;
+    border: none;
+    background-color: #FFC300;
+}
+
+/* responsive konten 3 */
+ .judul2{
+    position: relative;
+    
+    margin-left: 100px;
+   
+    font-family: Lexend;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 34px;
+    line-height: 30px;
+}
+
+.konten3{
+    position: relative;
+    z-index: -1;
+    height: 70vh;
+    width: 100vw;
+    bottom: 70px;
+    background-color:  #F5F5F5;;
+}
+
+.konten3 .subkonten2{
+    margin: auto;
+    position: relative;
+    width: 100%;
+    height: 520px;
+    top: 30px;
+    background: rgb(123, 17, 19);
+}
+
+.flex-container {
+  display: flex;
+  flex-wrap: nowrap;
+ 
+}
+
+.flex-container > div {
+  width: 19vw;
+  margin: 7vw;
+  margin-left: 6vw;
+  margin-top: 5vh;
+  text-align: center;
+  line-height: 20px;
+  font-size: 15px;
+  color: #FFC300;
+
+}
+
+
+.flex-container > div > img {
+  width: 16vw;
+  height: 12vh;
+  margin: 7vw;
+  margin-left: 2vw;
+  margin-top: 20px;
+  text-align: center;
+  line-height: 19px;
+    
+}
+
+.flex-container > div > p {
+ color: #fff;
+ font-size: 25px;
+ line-height: 25px;
+ margin-top: -6vh;
+}   
+}
+
+
+
+
+
+
+/* untuk ukuran hp */
+@media only screen and (max-width:768px) {
+    .navTrigger {
+        display: block;
+    }
+    .nav div.logo {
+        margin-left: 15px;
+    }
+    .nav div.main_list {
+        width: 100%;
+        height: 0;
+        overflow: hidden;
+        /* membuat posisi kembali ke kanan */
+        margin-right: 0;
+    }
+    .nav div.show_list {
+        height: auto;
+        display: none;
+    }
+    .nav div.main_list ul {
+        flex-direction: column;
+        width: 100%;
+        height: 300px;
+        right: 0;
+        left: 0;
+        bottom: 200px;
+        background-color: wheat ;
+        /*w*/
+        background-position: center top;
+    }
+    .nav div.main_list ul li {
+        width: 100%;
+        text-align: right;
+    }
+    .nav div.main_list ul li a {
+        text-align: center;
+        width: 100%;
+        font-size: 3rem;
+        padding: 20px;
+    }
+    .nav div.media_button {
+        display: block;
+
+    }
+    /* responsive navbar */
+
+    .konten {
+    width: 100vw;
+    height: 400px;
+    background-position: center top;
+	background-size:cover;
+    
+}
+
+@keyframes example {
+    0% {background-color: pink;}
+    100% {background-color: pink;}
+  }
+
+  /* renponsive konten 2 */
+
+  .konten2{
+    position: relative;
+    z-index: -1;
+    height: 100vh;
+    bottom: 30px;
+    width: 100vw;
+    background-color: #F5F5F5;
+}
+
+ .judul{
+    position: relative;
+    top: 60px;
+    margin-left: 8vw;
+    font-family: Lexend;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 28px;
+    line-height: 30px;
+}
+
+.konten2 .subkonten{
+    margin: auto;
+    position: relative;
+    top: 80px;
+    height: 721px;
+    width: 85vw;
+    background-color: rgb(0, 102, 96);
+}
+
+.konten2 .subkonten .gambarK{
+    position: absolute;
+    width: 50vw;
+    height: 400px;
+    left: 150px;
+    top: 20px;    
+}
+
+
+.konten2 .subkonten .textK {
+    position: absolute;
+    width: 50vw;
+    height: 90px;
+    right: 60px;
+    top: 390px;
+
+    font-family: Lexend;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 19px;
+    line-height: 30px;
+    text-align: right;
+    color: #FFFFFF;
+}
+
+.konten2 .subkonten .mulai{
+    position: absolute;
+    width: 20vw;
+    height: 7vw;
+    left: 34vw;
+    top: 550px;
+    font-size: 25px;
+    cursor: pointer;
+    border-radius: 10px;
+    border: none;
+    background-color: #FFC300;
+}
+
+/* responsive konten 3 */
+ .judul2{
+    position: relative;
+    
+    margin-left: 60px;
+   
+    font-family: Lexend;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 28px;
+    line-height: 30px;
+}
+
+.konten3{
+    position: relative;
+    z-index: -1;
+    height: 70vh;
+    width: 100vw;
+    bottom: 70px;
+    background-color:  #F5F5F5;;
+}
+
+.konten3 .subkonten2{
+    margin: auto;
+    position: relative;
+    width: 100%;
+    height: 520px;
+    top: 30px;
+    background: rgb(123, 17, 19);
+}
+
+.flex-container {
+  display: flex;
+  flex-wrap: nowrap;
+ 
+}
+
+.flex-container > div {
+  width: 19vw;
+  margin: 7vw;
+  margin-left: 6vw;
+  margin-top: 7vh;
+  text-align: center;
+  line-height: 19px;
+  font-size: 13px;
+  color: #FFC300;
+
+}
+
+
+.flex-container > div > img {
+  width: 16vw;
+  height: 10vh;
+  margin: 7vw;
+  margin-left: 2vw;
+  margin-top: 1vh;
+  text-align: center;
+  line-height: 19px;
+    
+}
+
+}
