@@ -1,0 +1,249 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+/* html,
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Quicksand", sans-serif;
+ 
+} */
+.navbar {
+  
+  background-color: #fff;
+  position: fixed;
+  top: 0;
+  width: 100vw;
+  height: 60px;
+}
+
+.navbar a {
+  margin-top: 15px;
+  float: right;
+  display: block;
+  color: #000;
+  text-align: center;
+  padding: 5px 60px 10px ;
+  text-decoration: none;
+  font-size: 22px;
+  height: 25px;
+ 
+}
+
+.navbar span{
+    margin-top: 10px;
+  float: right;
+  display: block;
+  color: #000;
+  text-align: center;
+  padding: 14px 60px;
+  text-decoration: none;
+  font-size: 17px;
+ 
+}
+
+.navbar .active{
+    color: #FFC300;
+}
+
+.navbar a:hover {
+  background: #FFC300;
+  color: black;
+}
+
+.main {
+  padding: 16px;
+  margin-top: 30px;
+  height: 1500px; /* Used in this example to enable scrolling */
+}
+/*  */
+
+
+body{
+  background: #003566;
+  overflow: hidden;
+}
+
+
+.container{
+  max-width: 540px;
+  padding: 0 20px;
+  margin: 170px auto;
+}
+
+.wrapper{
+  width: 500px;
+  height: 600px;
+  background: #fff;
+  border-radius: 5px;
+  box-shadow: 0px 4px 10px 1px rgba(0,0,0,0.1);
+}
+.wrapper .title{
+  height: 90px;
+  background: transparent;
+  border-radius: 5px 5px 0 0;
+  color: #000;
+  font-size: 30px;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.wrapper form{
+  padding: 50px 100px 250px 90px;
+}
+.wrapper form .row{
+  height: 45px;
+  margin-bottom: 10px;
+  position: relative;
+}
+.wrapper form .row input{
+    
+  height: 100%;
+  width: 100%;
+  outline: none;
+  background-color: #E0E0E0;
+  padding-left: 60px;
+  border-radius: 15px;
+  border: 1px solid #E0E0E0;
+  font-size: 16px;
+  transition: all 0.3s ease;
+}
+form .row input:focus{
+  border-color: #16a085;
+  box-shadow: inset 0px 0px 2px 2px rgba(26,188,156,0.25);
+}
+form .row input::placeholder{
+  color: #999;
+}
+.wrapper form .row i{
+  position: absolute;
+  width: 47px;
+  height: 100%;
+  color: rgb(150, 145, 145);
+  font-size: 18px;
+  background: transparent;
+  
+  border-radius: 5px 0 0 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.wrapper form .pass{
+  margin: -8px 0 20px 0;
+}
+.wrapper form .pass a{
+  color: #16a085;
+  font-size: 17px;
+  text-decoration: none;
+}
+.wrapper form .pass a:hover{
+  text-decoration: underline;
+}
+.wrapper form .button input{
+  color: #fff;
+  width: 120px;
+  margin-left: 100px;
+  font-size: 20px;
+  font-weight: 500;
+  padding-left: 0px;
+  background: #FFC300;
+  
+  cursor: pointer;
+}
+form .button input:hover{
+  background: #12876f;
+}
+.wrapper form .signup-link{
+  text-align: center;
+  margin-top: 20px;
+  font-size: 17px;
+}
+.wrapper form .signup-link a{
+  color: #FFC300;
+  text-decoration: none;
+}
+form .signup-link a:hover{
+  text-decoration: underline;
+}
+
+.wrapper form .alternatif{
+  text-align: center;
+  margin-top: 60px;
+  font-size: 17px;
+}
+
+.kotak1 {
+    position: fixed;
+    z-index: 1;
+    width: 150px;
+    height: 150px;
+    box-shadow: 0 0 1rem 0 rgba(0, 0, 0, .2); 
+    border-radius: 5px;
+    background-color: rgba(255, 255, 255, .15);
+    backdrop-filter: blur(5px);
+    
+    animation: kotak1 5s linear infinite alternate;
+}
+
+
+
+#kotak1{
+   position: fixed;
+  margin-left: -90px;
+  top:  670px;
+}
+
+#kotak2{
+   position: fixed;
+  margin-left: -90px;
+  bottom:  670px;
+  animation: kotak2 5s linear infinite alternate;
+}
+
+#kotak4{
+   position: fixed;
+  margin-left: 440px;
+  top:  670px;
+  animation: kotak2 5s linear infinite alternate;
+}
+
+#kotak3{
+   position: fixed;
+  margin-left: 400px;
+    bottom:  700px;
+}
+
+
+
+@keyframes kotak1 {
+  0%, 100% {
+    transform: translate(0, 0);
+  }
+  
+  50% {
+    transform: translate(50px, 0);
+  }
+  
+  80% {
+    transform: translate(-50px, 0);
+  }
+}
+
+@keyframes kotak2 {
+  0%, 100% {
+    transform: translate(0, 0);
+  }
+  
+  50% {
+    transform: translate(0, 50px);
+  }
+  
+  80% {
+    transform: translate(0, -50px);
+  }
+}
+
+
+
+
+
