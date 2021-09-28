@@ -16,21 +16,23 @@
 </head>
 
 <body>
-    <nav class="nav">
+
+    <!-- navbar -->
+    <nav class="nav navbar fixed-top navbar-light ">
         <div class="container">
             <div id="logo" class="logo">
-                <img src="assets/gagilogo.png" alt="Ga-G!" width="100" height="35"/> 
+                <img src="assets/logo/gagilogo.png" alt="Ga-G!" width="100" height="35"/> 
             </div>
             <div id="menu" class="menu">
                 <ul class="list">
                     <li>
-                        <a href="">Beranda</a>
+                        <a href="index.html">Beranda</a>
                     </li>
                     <li>
-                        <a href="">Daftar</a>
+                        <a href="regis.html">Daftar</a>
                     </li>
                     <li>
-                        <a href="">Masuk</a>
+                        <a href="login.html">Masuk</a>
                     </li>
                 </ul>
             </div>
@@ -42,51 +44,174 @@
         </div>
     </nav>
 
+    <!-- landing -->
     <section id="landing" class="landing">
-        <div class="container limit">
-            <div class="row">
-                <div class="col-md-6 pic-sec">
-                    <img src="assets/pic/landing-pic.svg" alt="Video Game Night" width="585" height="337">
+        <div class="wrapper">
+            <div class="col-md-1">
+                <!-- space -->
+            </div>
+            <div class="col-md-5">
+                <!-- landing-pic di kiri -->
+                <div class="row pic">
+                    <img src="assets/pic/index/landing/landing-pic.svg" alt="Video Game Night" width="585" height="337">
                 </div>
-                <div class="col-md-6 text-sec">
-                    <div class="row">
-                        <h2 class="title">Temukan produk yang terbaik <br> sesuai untukmu! </h2>
-                    </div>
-                    <div class="row">
-                        <p class="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit <br> Aenean sed sapien vel lorem ultricies commodo vel a purus. <br> Etiam non viverra risus. Donec lobortis tortor eget arcu <br> tristique, at commodo erat rhoncus. Morbi rutrum lorem quis <br> rhoncus ornare. Donec accumsan, mauris sed malesuada <br> volutpat velit risus feugiat nisi, eget iaculis dui mauris id <br> lectus. Praesent interdum viverra aliquet.</p>
-                    </div> 
+            </div>
+            <div class="col-md-5 text-wrapper">
+                <!-- landing-text di kanan -->
+                <div class="row title">
+                    <h3>Temukan produk yang terbaik <br> dan sesuai untukmu! </h3>
                 </div>
+                <div class="row text">
+                    <p>Disini, kamu bisa mendapatkan berbagai rekomendasi <br> produk terbaik yang cocok dengan kebutuhan kamu!</p>
+                </div>
+            </div>
+            <div class="col-md-1">
+                <!-- space -->
             </div>
         </div>
     </section>
+
+    <!-- section 1 -->
     <section id="sec-1" class="sec-1">
-        <div class="container limit">
-            <div class="wrapper">
+        <div class="wrapper">
+            <div class="col-md-1">
+                <!-- space -->
+            </div>
+            <div class="col-md-10">
                 <div class="row">
-                    <h2 class="sec-title">Jadilah bagian dari kami!</h2>
+                    <!-- judul -->
+                    <h3>Jadilah bagian dari kami!</h3>
                 </div>
                 <div class="row">
-                    <div class="col-md-6">
-                        <img src="assets/pic/undraw_connection_b38q.svg" class="pic" width="517" height="400">
-                    </div>
-                    <div class="col-md-6">
-                        <div class="row">
-                            <h4 class="text">Di Ga-G!, kamu bisa bergabung dengan ratusan ribu pengguna lainnya dan menciptakan komunitasmu sendiri.</h4>
-                        </div>
-                        <div class="row">
-                            <button class="mulai">Mulai</button>
+                    <!-- isi dan box -->
+                    <div class="box-bg-green">
+                        <div class="wrapper-box">
+                            <div class="col-md-5">
+                                <!-- sec-1-pic di kiri -->
+                                <img src="assets/pic/index/sec-1/sec-1-pic.svg" alt="Connection" width="417" height="300">
+                            </div>
+                            <div class="col-md-2">
+                                <!-- space -->
+                            </div>
+                            <div class="col-md-5">
+                                <!-- sec-1-text dan btn di kiri -->
+                                <div class="row">
+                                    <p class="text">Di Ga-G!, kamu bisa bergabung dengan ratusan <br> ribu pengguna lainnya dan menciptakan <br> komunitasmu sendiri</p>
+                                </div>
+                                <div class="row">
+                                    <button class="btn btn-mulai">Mulai</button>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
+            <div class="col-md-1">
+                <!-- space -->
+            </div>
         </div>
     </section>
-    <!-- <section id="sec-2" class="sec-2">
-    
+
+    <!-- section 2 -->
+    <section id="sec-2" class="sec-2">
+        <div class="wrapper">
+            <!-- judul -->
+            <h3 class="title">Jadilah bagian dari kami!</h3>
+            <!-- isi dan box -->
+            <div class="box-bg-red flex-con">
+                <div class="col-md-1">
+                    <!-- space -->
+                </div>
+                <div class="col-md-2 cols-1">
+                    <!-- kolom 1 -->
+                    <div class="row sub-title">
+                        <p>Tulis ulasan <br> pribadimu!</p>
+                    </div>
+                    <div class="row sub-pic">
+                        <img src="assets/pic/index/sec-2/icon.png" alt="icon-1" width="116" height="76">
+                    </div>
+                    <div class="row sub-text">
+                        <p>Tambahkan ulasan <br> tentang produk <br> yang kamu gunakan</p>
+                    </div>
+                </div>
+                <div class="col-md-2">
+                    <!-- space -->
+                </div>
+                <div class="col-md-2 cols-2">
+                    <!-- kolom 2 -->
+                    <div class="row sub-title">
+                        <p>Diskusikan bersama <br> komunitas!</p>
+                    </div>
+                    <div class="row sub-pic">
+                        <img src="assets/pic/index/sec-2/icon2.png" alt="icon-2" width="116" height="96">
+                    </div>
+                    <div class="row sub-text">
+                        <p>Buatlah forum <br> komunitas dan bagikan <br> pengalamanmu</p>
+                    </div>
+                </div>
+                <div class="col-md-2">
+                    <!-- space -->
+                </div>
+                <div class="col-md-2 cols-3">
+                    <!-- kolom 3 -->
+                    <div class="row sub-title">
+                        <p>Temukan produk <br> yang sesuai!</p>
+                    </div>
+                    <div class="row sub-pic">
+                        <img src="assets/pic/index/sec-2/icon3.png" alt="icon-3" width="116" height="76">
+                    </div>
+                    <div class="row sub-text">
+                        <p>Cari produk yang <br> sesuai dengan <br> kebutuhanmu</p>
+                    </div>
+                </div>
+                <div class="col-md-1">
+                    <!-- space -->
+                </div>
+            </div>
+        </div>
     </section>
+
+    <!-- footer -->
     <section id="footer" class="footer">
+        <div class="wrapper">
+            <div class="col-md-1">
+                <!-- space -->
+            </div>
+            <div class="col-md-10 content">
+                <!-- isi konten -->
+                <div class="row pic">
+                    <!-- footer-pic -->
+                    <img src="assets/logo/gagilogo2.svg" alt="Ga-G!" width="200" height="135">
+                </div>
+                <div class="row text">
+                    <!-- footer-text -->
+                    <p>thanks to</p>
+                </div>
+                <div class="row supported">
+                    <!-- footer-details -->
+                    <div class="col">
+                        <img src="assets/pic/index/footer/Logitech-Symbol.png" alt="Logitech" height="88">
+                    </div>
+                    <div class="col">
+                        <img src="assets/pic/index/footer/Razer-Logo-Horizontal-1-1.png" alt="Razer" height="88">
+                    </div>
+                    <div class="col">
+                        <img src="assets/pic/index/footer/rexus.png" alt="Rexus" height="88">
+                    </div>
+                    <div class="col">
+                        <img src="assets/pic/index/footer/Steelseries-logo.png" alt="Steelseries" height="88">
+                    </div>
+                    <div class="col">
+                        <img src="assets/pic/index/footer/FANTECH2.png" alt="Fantech" height="88">
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-1">
+                <!-- space -->
+            </div>
+        </div>
+    </section>
     
-    </section> -->
 
     <!-- js -->
     <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
